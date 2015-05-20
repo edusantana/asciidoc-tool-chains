@@ -1,0 +1,11 @@
+== 004.2 - Computer architecture
+
+URI:: http://udcdata.info/013683
+Notation:: 004.2
+Caption:: Computer architecture
+Broader class:: 004  Computer science and technology. Computing. Data processing
+Narrower classes::
+- 004.22	Data representation
+- 004.23	Instruction set architecture
+- 004.25	Memory system
+- 004.27	Advanced architectures. Non-Von Neumann architectures
