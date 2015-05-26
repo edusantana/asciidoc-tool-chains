@@ -4,6 +4,10 @@
 
 - And there are texts from [many areas of knowledge](http://udcdata.info). 
 
+
+![asciidoc toolchains](images/engines.dot.png "Many asciidoc toolchains")
+
+
 Which toolchains are fine for the area you are writing for? This
 project will research this question.
 
