@@ -1,0 +1,9 @@
+Book Title Goes Here
+====================
+
+== The First Chapter
+Chapters can contain sub-sections nested up to three deep.
+
+=== First section
+
+Text.

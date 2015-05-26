@@ -1,0 +1,18 @@
+== 004 Computer science and technology. Computing. Data processing
+
+
+URI:: http://udcdata.info/013566
+Notation:: 004
+Caption:: Ciência e tecnologia informáticas. Computação. Processamento de dados
+Scope Note:: Classificar aqui a tecnologia da informação (computação e telecomunicações)
+Broader class:: 00  Prolegómenos. Fundamentos do conhecimento e da cultura. Propadéutica
+Narrower classes::
+- 004.01/.08	Subdivisões auxiliares especiais para computação
+- 004.2	Arquitectura dos computadores
+- 004.3	Equipamento informático. Hardware
+- 004.4	Programas de computador (software)
+- 004.5	Interacção homem-computador. Interface homem-máquina. Interface do utilizador. Ambiente do utilizador
+- 004.6	Dados
+- 004.7	Comunicação de computadores. Redes de computadores
+- 004.8	Inteligência artificial
+- 004.9	Técnicas baseadas em computadores e orientadas para aplicações

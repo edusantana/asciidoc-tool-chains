@@ -1,0 +1,3 @@
+ignore:
+  - "asciidoctor-docbook5-dbcontext-context"
+  - "asciidoc-docbook45-dblatex-pdflatex"

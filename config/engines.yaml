@@ -1,0 +1,8 @@
+# commands to run engines
+asciidoc-docbook45:    /home/santana/ambiente/asciidoc-8.6.9/asciidoc.py    -b docbook45 --doctype=book
+asciidoctor-docbook45: asciidoctor -b docbook45 --doctype=book
+asciidoctor-docbook5:  asciidoctor -b docbook5  --doctype=book
+fopub: /home/santana/programas/editoracao/asciidoctor-fopub/fopub
+dblatex-pdflatex: dblatex -V --param=latex.encoding=utf8 -P latex.babel.language=brazilian
+dblatex-xetex: dblatex -V -b xetex
+dbcontext-context: dbcontext -V
