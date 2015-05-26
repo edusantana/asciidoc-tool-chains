@@ -35,61 +35,61 @@ The `udc` directory is divided with a language directory. And inside it will hav
 
 To see all tasks run:
 
-  $ rake -T
-  rake features:asciidoc-docbook45                       # Build feature docbook file
-  rake features:asciidoc-docbook45:dbcontext-context     # Build pdf using this toolchain
-  rake features:asciidoc-docbook45:dblatex-xetex         # Build pdf using this toolchain
-  rake features:asciidoc-docbook45:fopub                 # Build pdf using this toolchain
-  rake features:asciidoctor-docbook45                    # Build feature docbook file
-  rake features:asciidoctor-docbook45:dbcontext-context  # Build pdf using this toolchain
-  rake features:asciidoctor-docbook45:dblatex-pdflatex   # Build pdf using this toolchain
-  rake features:asciidoctor-docbook45:dblatex-xetex      # Build pdf using this toolchain
-  rake features:asciidoctor-docbook45:fopub              # Build pdf using this toolchain
-  rake features:asciidoctor-docbook5                     # Build feature docbook file
-  rake features:asciidoctor-docbook5:dblatex-pdflatex    # Build pdf using this toolchain
-  rake features:asciidoctor-docbook5:dblatex-xetex       # Build pdf using this toolchain
-  rake features:asciidoctor-docbook5:fopub               # Build pdf using this toolchain
-  rake features:docbook                                  # Build feature docbook with all engines
-  rake features:pdf                                      # Build these pdfs
-  rake udc:asciidoc-docbook45                            # Build feature docbook file
-  rake udc:asciidoc-docbook45:dbcontext-context          # Build pdf using this toolchain
-  rake udc:asciidoc-docbook45:dblatex-xetex              # Build pdf using this toolchain
-  rake udc:asciidoc-docbook45:fopub                      # Build pdf using this toolchain
-  rake udc:asciidoctor-docbook45                         # Build feature docbook file
-  rake udc:asciidoctor-docbook45:dbcontext-context       # Build pdf using this toolchain
-  rake udc:asciidoctor-docbook45:dblatex-pdflatex        # Build pdf using this toolchain
-  rake udc:asciidoctor-docbook45:dblatex-xetex           # Build pdf using this toolchain
-  rake udc:asciidoctor-docbook45:fopub                   # Build pdf using this toolchain
-  rake udc:asciidoctor-docbook5                          # Build feature docbook file
-  rake udc:asciidoctor-docbook5:dblatex-pdflatex         # Build pdf using this toolchain
-  rake udc:asciidoctor-docbook5:dblatex-xetex            # Build pdf using this toolchain
-  rake udc:asciidoctor-docbook5:fopub                    # Build pdf using this toolchain
-  rake udc:docbook                                       # Build feature docbook with all engines
-  rake udc:pdf                                           # Build these pdfs
+    $ rake -T
+    rake features:asciidoc-docbook45                       # Build feature docbook file
+    rake features:asciidoc-docbook45:dbcontext-context     # Build pdf using this toolchain
+    rake features:asciidoc-docbook45:dblatex-xetex         # Build pdf using this toolchain
+    rake features:asciidoc-docbook45:fopub                 # Build pdf using this toolchain
+    rake features:asciidoctor-docbook45                    # Build feature docbook file
+    rake features:asciidoctor-docbook45:dbcontext-context  # Build pdf using this toolchain
+    rake features:asciidoctor-docbook45:dblatex-pdflatex   # Build pdf using this toolchain
+    rake features:asciidoctor-docbook45:dblatex-xetex      # Build pdf using this toolchain
+    rake features:asciidoctor-docbook45:fopub              # Build pdf using this toolchain
+    rake features:asciidoctor-docbook5                     # Build feature docbook file
+    rake features:asciidoctor-docbook5:dblatex-pdflatex    # Build pdf using this toolchain
+    rake features:asciidoctor-docbook5:dblatex-xetex       # Build pdf using this toolchain
+    rake features:asciidoctor-docbook5:fopub               # Build pdf using this toolchain
+    rake features:docbook                                  # Build feature docbook with all engines
+    rake features:pdf                                      # Build these pdfs
+    rake udc:asciidoc-docbook45                            # Build feature docbook file
+    rake udc:asciidoc-docbook45:dbcontext-context          # Build pdf using this toolchain
+    rake udc:asciidoc-docbook45:dblatex-xetex              # Build pdf using this toolchain
+    rake udc:asciidoc-docbook45:fopub                      # Build pdf using this toolchain
+    rake udc:asciidoctor-docbook45                         # Build feature docbook file
+    rake udc:asciidoctor-docbook45:dbcontext-context       # Build pdf using this toolchain
+    rake udc:asciidoctor-docbook45:dblatex-pdflatex        # Build pdf using this toolchain
+    rake udc:asciidoctor-docbook45:dblatex-xetex           # Build pdf using this toolchain
+    rake udc:asciidoctor-docbook45:fopub                   # Build pdf using this toolchain
+    rake udc:asciidoctor-docbook5                          # Build feature docbook file
+    rake udc:asciidoctor-docbook5:dblatex-pdflatex         # Build pdf using this toolchain
+    rake udc:asciidoctor-docbook5:dblatex-xetex            # Build pdf using this toolchain
+    rake udc:asciidoctor-docbook5:fopub                    # Build pdf using this toolchain
+    rake udc:docbook                                       # Build feature docbook with all engines
+    rake udc:pdf                                           # Build these pdfs
 
 To look for hidden tasks:
 
-  $ rake -P
-  rake features:pdf
-      target/features/simple/simple.adoc/dblatex-xetex-from-asciidoc-docbook45.pdf
-      target/features/simple/simple.adoc/dbcontext-context-from-asciidoc-docbook45.pdf
-      target/features/simple/simple.adoc/fopub-from-asciidoc-docbook45.pdf
-      target/features/simple/simple.adoc/dblatex-pdflatex-from-asciidoctor-docbook45.pdf
-      target/features/simple/simple.adoc/dblatex-xetex-from-asciidoctor-docbook45.pdf
-      target/features/simple/simple.adoc/dbcontext-context-from-asciidoctor-docbook45.pdf
-      target/features/simple/simple.adoc/fopub-from-asciidoctor-docbook45.pdf
-      target/features/simple/simple.adoc/dblatex-pdflatex-from-asciidoctor-docbook5.pdf
-      target/features/simple/simple.adoc/dblatex-xetex-from-asciidoctor-docbook5.pdf
-      target/features/simple/simple.adoc/fopub-from-asciidoctor-docbook5.pdf
-  rake udc:pdf
-      target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dblatex-xetex-from-asciidoc-docbook45.pdf
-      target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dbcontext-context-from-asciidoc-docbook45.pdf
-      target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/fopub-from-asciidoc-docbook45.pdf
-      target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dblatex-pdflatex-from-asciidoctor-docbook45.pdf
-      target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dblatex-xetex-from-asciidoctor-docbook45.pdf
-      target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dbcontext-context-from-asciidoctor-docbook45.pdf
-      target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/fopub-from-asciidoctor-docbook45.pdf
-      target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dblatex-pdflatex-from-asciidoctor-docbook5.pdf
-      target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dblatex-xetex-from-asciidoctor-docbook5.pdf
-      target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/fopub-from-asciidoctor-docbook5.pdf
+    $ rake -P
+    rake features:pdf
+        target/features/simple/simple.adoc/dblatex-xetex-from-asciidoc-docbook45.pdf
+        target/features/simple/simple.adoc/dbcontext-context-from-asciidoc-docbook45.pdf
+        target/features/simple/simple.adoc/fopub-from-asciidoc-docbook45.pdf
+        target/features/simple/simple.adoc/dblatex-pdflatex-from-asciidoctor-docbook45.pdf
+        target/features/simple/simple.adoc/dblatex-xetex-from-asciidoctor-docbook45.pdf
+        target/features/simple/simple.adoc/dbcontext-context-from-asciidoctor-docbook45.pdf
+        target/features/simple/simple.adoc/fopub-from-asciidoctor-docbook45.pdf
+        target/features/simple/simple.adoc/dblatex-pdflatex-from-asciidoctor-docbook5.pdf
+        target/features/simple/simple.adoc/dblatex-xetex-from-asciidoctor-docbook5.pdf
+        target/features/simple/simple.adoc/fopub-from-asciidoctor-docbook5.pdf
+    rake udc:pdf
+        target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dblatex-xetex-from-asciidoc-docbook45.pdf
+        target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dbcontext-context-from-asciidoc-docbook45.pdf
+        target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/fopub-from-asciidoc-docbook45.pdf
+        target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dblatex-pdflatex-from-asciidoctor-docbook45.pdf
+        target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dblatex-xetex-from-asciidoctor-docbook45.pdf
+        target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dbcontext-context-from-asciidoctor-docbook45.pdf
+        target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/fopub-from-asciidoctor-docbook45.pdf
+        target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dblatex-pdflatex-from-asciidoctor-docbook5.pdf
+        target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/dblatex-xetex-from-asciidoctor-docbook5.pdf
+        target/udc/pt/3/7/cap3-educacao-sociedade-conteporania.adoc/fopub-from-asciidoctor-docbook5.pdf
 
