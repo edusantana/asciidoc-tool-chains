@@ -1,0 +1,100 @@
+digraph test123 {
+  compound=true;
+  node [shape=box];
+  
+
+  estruturais[label="Entrutural"];
+  formatacao[label="Formatação"];
+  i18n[label="Internacionalização"];
+  funcionalidades[label="Funcionalidades do Asciidoc"];
+  estruturais->funcionalidades;
+  formatacao->funcionalidades
+  i18n->funcionalidades;
+
+  a004[label="004: Computação"]
+  a37[label="37: Educação"]
+  a51[label="51: Matemática"]
+  
+  AC[label="Áreas do Conhecimento"]
+  AC->adoc;
+  AC->funcionalidades[style="dashed"];
+  a004->AC;
+  a37->AC;
+  a51->AC;
+  
+  funcionalidades->adoc;
+  {rank=same AC funcionalidades}
+  
+  adoc[label="Arquivo de texto\n no formato Asciidoc" shape="ellipse"];
+
+
+  pdf[label="Arquivo PDF" shape="ellipse"];
+
+  subgraph cluster_fluxos {
+    label = "Possíveis Fluxos";    
+    asciidoc[label="asciidoc"];
+    asciidoctor[label="asciidoctor"];
+    asciidoctor_latex[label="asciidoctor-latex"];
+    
+    {rank=same asciidoc asciidoctor asciidoctor_latex}
+
+    docbook45[label="Docbook 4.5"];
+    docbook5[label="Docbook 5.0"];
+
+    dblatex;
+    dbcontext;
+
+    pdflatex;
+
+    texexec[label="texexec (ConTeXt)"]
+
+
+    adoc->asciidoc[color="red"];
+    adoc->asciidoctor;
+    adoc->asciidoctor_latex;
+
+    asciidoc->docbook45[color="red"];
+    asciidoctor->docbook45;
+    asciidoctor->docbook5;
+
+    docbook45->dblatex[color="red"];
+    docbook45->dbcontext;
+
+    fo[label="asciidoctor-fopub"];
+    docbook5->dblatex;
+    docbook5->dbcontext[style=dotted];
+    docbook45->fo;
+    docbook5->fo;
+
+
+    dblatex->pdflatex[color="red"];
+    dblatex->xelatex;
+    dbcontext->texexec;
+
+    tex;
+    asciidoctor_latex -> tex;
+    tex->pdflatex;
+    tex->xelatex;
+
+    fop[label="Apache FOP"]
+    fo->fop
+
+    pdfTeX;
+    xelatex;
+    
+    {rank=same tex dblatex dbcontext}
+
+    pdflatex->pdfTeX[color="red"];
+    texexec->pdfTeX;
+    xelatex->XeTeX;
+
+  }
+  
+  pdfTeX->pdf[color="red"];
+  XeTeX->pdf;
+  fop->pdf;
+
+#  #pdfTeX-texexec;
+  
+}
+
